@@ -1,0 +1,27 @@
+@keyframes bounce5s {
+    0% {transform: translateY(0)}
+    10% {transform: translateY(-50%)}
+    88% {transform: translateY(-50%)}
+    92% {transform: translateY(0%)}
+    96% {transform: translateY(-25%)}
+    100% {transform: translateY(0)}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* ==== Menu Hamburguesa ==== */
+@keyframes barra1 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(30deg);}
+}
+@keyframes barra2 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes barra3 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-30deg);}
+}
+/* ==== // Menu Hamburguesa // ==== */
