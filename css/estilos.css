@@ -47,6 +47,10 @@ body.flex {
   background-color: white;
 }
 
+.hero-image img{
+  height: 500px;
+}
+
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

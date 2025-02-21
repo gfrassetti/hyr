@@ -8,6 +8,17 @@ jQuery(document).ready(function ($) {
   var barra2 = $("#menu_responsive span.barra").eq(1);
   var barra3 = $("#menu_responsive span.barra").eq(2);
 
+
+
+    const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+
+    $('.aside-menu a[data-section]').each(function() {
+      const section = $(this).data('section');
+      if (currentPage === section) {
+        $(this).addClass('title');
+      }
+    });
+
   menuBurger.click(animarMenu);
 
   function animarMenu() {
@@ -105,4 +116,13 @@ jQuery(document).ready(function ($) {
         }); */
 
   // ==== // Back to top ====
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var currentURL = window.location.pathname;
+    document.querySelectorAll(".aside-menu a[data-section]").forEach(function(link) {
+      if (currentURL.includes(link.getAttribute("data-section"))) {
+        link.classList.add("text-orange-500");
+      }
+    });
+  });
 });
