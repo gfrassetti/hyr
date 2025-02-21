@@ -87,6 +87,8 @@
         }
       }
     </script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Language and Charset -->
     <meta http-equiv="Content-Language" content="es" />
@@ -165,7 +167,7 @@
     </header>
 
     <!-- Hero Section con Carousel -->
-    <section class="relative w-full h-screen overflow-hidden">
+    <section class="relative w-full h-screen overflow-hidden scroll-section">
       <div class="swiper-container w-full h-full" data-swiper-parallax="-100">
         <div class="swiper-wrapper h-full">
           <div
@@ -212,7 +214,7 @@
       </div>
     </section>
     <!-- Iconos -->
-    <section class="relative z-10 -mt-20">
+    <section class="relative z-10 -mt-20 scroll-section" data-aos="fade-up">
       <div
         class="max-w-5xl mx-auto bg-white shadow-lg rounded-lg p-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center"
       >
@@ -247,7 +249,7 @@
     <!-- Nosotros -->
     <section
       id="nosotros"
-      class="flex flex-col sm:flex-row justify-center item-center"
+      class="flex flex-col sm:flex-row justify-center item-center scroll-section"
     >
       <div class="block content-center w-full sm:w-1/2 p-8">
         <h2
@@ -292,7 +294,9 @@
       </div>
     </section>
     <!-- Clientes -->
-    <section class="clientes py-12 bg-gray-800 block content-center">
+    <section
+      class="clientes py-12 bg-gray-800 block content-center scroll-section"
+    >
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-semibold text-center text-white mb-16 py-4">
           Nuestros Clientes
@@ -365,7 +369,7 @@
     </section>
 
     <!-- Map -->
-    <section class="w-full h-96">
+    <section class="w-full h-96 scroll-section">
       <iframe
         class="w-full h-full grayscale contrast-200 border-0"
         loading="lazy"
@@ -431,10 +435,13 @@
     </footer>
 
     <!-- End Body -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/funciones.js"></script>
     <script>
+      AOS.init();
       const swiper = new Swiper(".swiper-container", {
         loop: true,
         autoplay: { delay: 3000, disableOnInteraction: false },
@@ -456,7 +463,14 @@
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        var topbar = document.getElementById("topbar");
+        ScrollReveal().reveal(".scroll-section", {
+          duration: 1000,
+          distance: "100px",
+          origin: "bottom",
+          easing: "ease-in-out",
+          interval: 200,
+        });
+        const topbar = document.getElementById("topbar");
 
         window.addEventListener("scroll", function () {
           if (window.scrollY > 10) {
