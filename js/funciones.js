@@ -8,13 +8,21 @@ jQuery(document).ready(function ($) {
   var barra2 = $("#menu_responsive span.barra").eq(1);
   var barra3 = $("#menu_responsive span.barra").eq(2);
 
+  // Abrir/Cerrar el menú hamburguesa
   $("#mobile-menu-toggle").on("click", function () {
     $(this).toggleClass("is-active");
     $("#mobile-nav").toggleClass("show hidden");
   });
 
+  // Mostrar/Ocultar submenú
   $("#submenu-toggle").on("click", function () {
     $("#submenu").toggleClass("open").slideToggle(300);
+  });
+
+  // Cerrar el menú al hacer clic en cualquier enlace
+  $("#mobile-nav a").on("click", function () {
+    $("#mobile-menu-toggle").removeClass("is-active");
+    $("#mobile-nav").removeClass("show").addClass("hidden");
   });
 
   const currentPage = window.location.pathname
