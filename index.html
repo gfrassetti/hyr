@@ -118,8 +118,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
     />
+    <!-- Menu -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+    />
   </head>
   <body class="inicio">
+    <!-- desktop menu -->
     <header id="topbar" class="topbar transition-all">
       <a href="index.html" id="logoSitio" class="logo p-4"
         ><img src="img/logo.svg" width="150" alt="Hierro y Rueda"
@@ -165,15 +171,72 @@
         </nav>
       </div>
     </header>
+    <!-- mobile menu -->
+    <header
+      class="mobile-topbar flex sm:hidden fixed top-0 left-0 w-full bg-black text-white items-center justify-between p-4 z-50"
+    >
+      <div>
+        <img
+          src="img/isologo.png"
+          alt="Logo"
+          class="w-16 object-fit max-h-auto"
+        />
+      </div>
 
+      <button class="hamburger hamburger--slider" id="mobile-menu-toggle">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+
+      <nav
+        id="mobile-nav"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out"
+      >
+        <a href="#home" class="text-2xl">Inicio</a>
+        <a href="#about" class="text-2xl">Sobre Nosotros</a>
+
+        <div class="relative text-center flex flex-col items-center">
+          <button id="submenu-toggle" class="text-2xl flex items-center gap-2">
+            Servicios Industriales ▼
+          </button>
+          <div
+            id="submenu"
+            class="hidden flex flex-col items-center rounded-md p-4 space-y-2 mt-2"
+          >
+            <a href="demoliciones-industriales.html" class="text-xl"
+              >Demoliciones Industriales</a
+            >
+            <a href="desmontajes-industriales.html" class="text-xl"
+              >Desmontajes Industriales</a
+            >
+            <a href="montajes-industriales.html" class="text-xl"
+              >Montajes Industriales</a
+            >
+            <a href="rezagos-industriales.html" class="text-xl"
+              >Rezagos / Chatarra</a
+            >
+            <a href="alquiler-equipos-industriales.html" class="text-xl"
+              >Alquiler de Equipos</a
+            >
+          </div>
+        </div>
+
+        <a href="#contact" class="text-2xl">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- End mobile menu -->
     <!-- Hero Section con Carousel -->
     <section class="relative w-full h-screen overflow-hidden scroll-section">
       <div class="swiper-container w-full h-full" data-swiper-parallax="-100">
         <div class="swiper-wrapper h-full">
           <div
-            class="swiper-slide flex items-center justify-center bg-cover bg-center h-full w-full transition-all duration-1000 ease-in-out content-center"
+            class="swiper-slide flex items-center justify-center bg-cover bg-center md:bg-top h-full w-full transition-all duration-1000 ease-in-out content-center"
             style="
-              background-image: url('https://hierroyrueda.com.ar/img/portada1920-2.jpg');
+              background-image: url('/img/portada1920-2.jpg');
+              background-size: cover;
+              image-rendering: -webkit-optimize-contrast;
             "
             data-swiper-parallax="-300"
           >
@@ -187,6 +250,7 @@
               <br />
             </div>
           </div>
+
           <div
             class="swiper-slide flex items-center justify-center bg-cover bg-center h-full w-full transition-all duration-1000 ease-in-out content-center"
             style="background-image: url('img/portada01.jpg')"
@@ -249,7 +313,7 @@
     <!-- Nosotros -->
     <section
       id="nosotros"
-      class="flex flex-col sm:flex-row justify-center item-center scroll-section"
+      class="flex flex-col sm:flex-row justify-center item-center scroll-section mt-20 sm:mt-0"
     >
       <div class="block content-center w-full sm:w-1/2 p-8">
         <h2
@@ -298,7 +362,7 @@
       class="clientes py-12 bg-gray-800 block content-center scroll-section"
     >
       <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-semibold text-center text-white mb-16 py-4">
+        <h2 class="text-3xl font-semibold text-center text-white mb-8 py-4">
           Nuestros Clientes
         </h2>
         <div
@@ -308,61 +372,73 @@
             src="img/logos_clientes_web/agp_nobg.png"
             alt="YPF"
             class="w-32 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/basf.png"
             alt="Siderca"
             class="w-32 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/bayer.png"
             alt="Ford"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/delta_marina.png"
             alt="Ternium Siderar"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/enapro.png"
             alt="Toyota"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/holcim.png"
             alt="Pirelli"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/pernod.png"
             alt="Bridgestone"
             class="w-38 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/san_lorenzo.png"
             alt="Axion Energy"
             class="w-38 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/SIDYMETAL.png"
             alt="Allkem"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/subte.png"
             alt="Acerbrag"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/tpr.png"
             alt="Asociación de Cooperativas Argentinas"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
           <img
             src="img/logos_clientes_web/vw.png"
             alt="Tandanor"
             class="w-20 h-auto object-contain"
+            loading="lazy"
           />
         </div>
       </div>
