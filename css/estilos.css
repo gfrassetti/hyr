@@ -830,6 +830,10 @@ display: none !important;
   transition: opacity 0.3s ease-in;
 }
 
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 33px !important;
+}
+
 /*  ========================
         // Topbar //
     ======================== */
