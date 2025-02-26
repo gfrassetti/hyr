@@ -58,28 +58,40 @@
   </head>
   <body>
     <!-- desktop menu -->
-    <header id="topbar" class="topbar transition-all relative">
+    <header id="topbar" class="topbar transition-all">
       <a href="index.html" id="logoSitio" class="logo p-4">
-        <img src="img/logo.svg" width="150" alt="Hierro y Rueda" />
+        <img src="img/logo.svg" width="180" alt="Hierro y Rueda" />
       </a>
       <nav class="navbar">
         <ul class="nav-list">
-          <li>
-            <a href="index.html" class="dropdown-toggle">
-              Inicio
-            </a>
-          </li>
+          <li><a href="index.html">Inicio</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">
               Servicios Industriales
               <i class="fa-solid fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="desmontajes-industriales.html">Desmontajes Industriales</a></li>
-              <li><a href="montajes-industriales.html">Montajes Industriales</a></li>
-              <li><a href="rezagos-industriales.html">Rezagos / Chatarra</a></li>
-              <li><a href="alquiler-equipos-industriales.html">Alquiler de Equipos</a></li>
-              <li><a href="demoliciones-industriales.html">Demoliciones Industriales</a></li>
+              <li>
+                <a href="desmontajes-industriales.html"
+                  >Desmontajes Industriales</a
+                >
+              </li>
+              <li>
+                <a href="demoliciones-industriales.html"
+                  >Demoliciones Industriales</a
+                >
+              </li>
+              <li>
+                <a href="montajes-industriales.html">Montajes Industriales</a>
+              </li>
+              <li>
+                <a href="rezagos-industriales.html">Rezagos / Chatarra</a>
+              </li>
+              <li>
+                <a href="alquiler-equipos-industriales.html"
+                  >Alquiler de Equipos</a
+                >
+              </li>
             </ul>
           </li>
           <li><a href="trabajos.html">Trabajos</a></li>
@@ -87,18 +99,13 @@
           <li><a href="index.html#contacto">Contacto</a></li>
         </ul>
       </nav>
-      
     </header>
     <!-- mobile menu -->
     <header
       class="mobile-topbar flex sm:hidden fixed top-0 left-0 w-full bg-black text-white items-center justify-between p-4 z-50"
     >
       <div>
-        <img
-          src="img/logo.svg"
-          alt="Logo"
-          class="w-28 object-fit max-h-auto"
-        />
+        <img src="img/logo.svg" alt="Logo" class="w-32 object-fit max-h-auto" />
       </div>
 
       <button class="hamburger hamburger--slider" id="mobile-menu-toggle">
@@ -111,8 +118,7 @@
         id="mobile-nav"
         class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out"
       >
-      <a href="index.html" class="text-2xl">Inicio</a>
-      <a href="index.html#nosotros" class="text-2xl">Sobre Nosotros</a>
+        <a href="index.html#nosotros" class="text-2xl">Sobre Nosotros</a>
 
         <div class="relative text-center flex flex-col items-center">
           <button id="submenu-toggle" class="text-2xl flex items-center gap-2">
@@ -122,11 +128,11 @@
             id="submenu"
             class="hidden flex flex-col items-center rounded-md p-4 space-y-2 mt-2"
           >
-            <a href="demoliciones-industriales.html" class="text-xl"
-              >Demoliciones Industriales</a
-            >
             <a href="desmontajes-industriales.html" class="text-xl"
               >Desmontajes Industriales</a
+            >
+            <a href="demoliciones-industriales.html" class="text-xl"
+              >Demoliciones Industriales</a
             >
             <a href="montajes-industriales.html" class="text-xl"
               >Montajes Industriales</a
@@ -167,7 +173,7 @@
       <div class="flex p-4 sm:p-8 justify-center sm:justify-start">
         <!-- Menú lateral -->
         <aside class="aside-menu w-min hidden sm:block sm:w-1/4 bg-white p-2 sm:p-6 text-left" id="menuContent">
-          <h2 class="text-lg sm:text-2xl text-center font-medium mb-4 title">Nuestros Servicios</h2>
+          <h2 class="text-lg sm:text-2xl text-left font-medium mb-4 title">Nuestros Servicios</h2>
           <ul class="space-y-2">
             <li class="border-1 border-b">
               <a
@@ -222,7 +228,23 @@
 
         <!-- Contenido dinámico -->
         <div class="w-3/4 p-0 sm:p-10 border-0 :border-l-2 border-gray-200">
-          <div id="montajes" class="contenido p-2 sm:p-6 bg-white text-center sm:text-left">
+          <nav class="flex items-center space-x-2 text-sm font-medium text-gray-600 py-4 sm:py-0" aria-label="Breadcrumb">
+            <!-- “Inicio” -->
+            <a href="index.html" target="_self" class="text-blue-600 hover:underline">Inicio</a>
+            
+            <!-- Separador -->
+            <span class="text-gray-400">/</span>
+            
+            <!-- “Servicios” -->
+            <a href="desmontajes-industriales.html" target="_self" class="text-blue-600 hover:underline">Servicios</a>
+
+            <!-- Separador -->
+            <span class="text-gray-400">/</span>
+
+            <!-- Sección o página actual: “Desmontajes Industriales” -->
+            <span class="text-gray-500">Rezagos / Chatarra</span>
+          </nav>
+          <div id="montajes" class="contenido p-2 sm:p-6 bg-white text-left">
             <h3 class="title text-2xl mb-4">Rezagos/Chatarra</h3>
             <p class="text-gray-700 leading-relaxed">Retiramos rezagos de industrias, metales ferrosos y no ferrosos para procesarlos y/o reacondicionarlos dándoles una nueva oportunidad de uso.
               Proveemos chatarra a las acerías para su fundición. A su vez compramos y vendemos los siguientes rezagos:
@@ -231,9 +253,9 @@
               <ul>
                 <li><strong>Metales Ferrosos:</strong> hierro, hierro forjado, acero y fundición.</li>
                 <li><strong>Metales No Ferrosos:</strong> cobre, aluminio, 
-                    <a href="https://www.infometales.com/estano/" target="_blank"><strong>estaño</strong></a>, 
-                    <a href="https://www.infometales.com/niquel/" target="_blank"><strong>níquel</strong></a>, 
-                    <a href="https://www.infometales.com/plomo/" target="_blank"><strong>plomo</strong></a>.
+                    <a href="https://www.infometales.com/estano/" target="_blank">estaño</a>, 
+                    <a href="https://www.infometales.com/niquel/" target="_blank">níquel</a>, 
+                    <a href="https://www.infometales.com/plomo/" target="_blank">plom></a>.
                 </li>
                 <li><strong>Rezagos de Industrias:</strong> cabreadas, caños, perfiles, ángulos, galpones.</li>
                 <li><strong>Rezago Ferroviario:</strong> vagones, rieles, durmientes.</li>
@@ -254,11 +276,11 @@
             href="index.html#nosotros"
             class="flex justify-center space-x-3 lg:justify-start"
           >
-            <img src="img/logo.svg" class="w-40" alt="Hierro y Rueda" />
+            <img src="img/isologo.png" class="w-28" alt="Hierro y Rueda" />
           </a>
         </div>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-sm gap-6 lg:w-3/4"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-sm gap-6 lg:w-3/4 text-left"
         >
           <div class="space-y-3">
             <h3 class="uppercase font-bold text-gray-700">Contacto</h3>
@@ -288,15 +310,16 @@
             <h3 class="uppercase font-bold text-gray-700">Servicios</h3>
             <ul class="space-y-1">
               <li>
-                <a href="demoliciones-industriales.html"
-                  >Demoliciones Industriales</a
-                >
-              </li>
-              <li>
                 <a href="desmontajes-industriales.html"
                   >Desmontajes Industriales</a
                 >
               </li>
+              <li>
+                <a href="demoliciones-industriales.html"
+                  >Demoliciones Industriales</a
+                >
+              </li>
+
               <li>
                 <a href="montajes-industriales.html">Montajes Industriales</a>
               </li>

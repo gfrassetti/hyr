@@ -814,6 +814,11 @@ display: none !important;
     padding: 0 1rem;
   }
   
+footer .grid{
+  text-align: center;
+}
+
+  
 } 
 .clientes{
   height: 600px;

@@ -126,15 +126,13 @@
   </head>
   <body>
     <!-- desktop menu -->
-    <header id="topbar" class="topbar transition-all relative">
+    <header id="topbar" class="topbar transition-all">
       <a href="index.html" id="logoSitio" class="logo p-4">
-        <img src="img/logo.svg" width="150" alt="Hierro y Rueda" />
+        <img src="img/logo.svg" width="180" alt="Hierro y Rueda" />
       </a>
       <nav class="navbar">
         <ul class="nav-list">
-          <li>
-            <a href="index.html" class="dropdown-toggle"> Inicio </a>
-          </li>
+          <li><a href="index.html">Inicio</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle">
               Servicios Industriales
@@ -147,6 +145,11 @@
                 >
               </li>
               <li>
+                <a href="demoliciones-industriales.html"
+                  >Demoliciones Industriales</a
+                >
+              </li>
+              <li>
                 <a href="montajes-industriales.html">Montajes Industriales</a>
               </li>
               <li>
@@ -155,11 +158,6 @@
               <li>
                 <a href="alquiler-equipos-industriales.html"
                   >Alquiler de Equipos</a
-                >
-              </li>
-              <li>
-                <a href="demoliciones-industriales.html"
-                  >Demoliciones Industriales</a
                 >
               </li>
             </ul>
@@ -175,7 +173,7 @@
       class="mobile-topbar flex sm:hidden fixed top-0 left-0 w-full bg-black text-white items-center justify-between p-4 z-50"
     >
       <div>
-        <img src="img/logo.svg" alt="Logo" class="w-28 object-fit max-h-auto" />
+        <img src="img/logo.svg" alt="Logo" class="w-32 object-fit max-h-auto" />
       </div>
 
       <button class="hamburger hamburger--slider" id="mobile-menu-toggle">
@@ -188,7 +186,6 @@
         id="mobile-nav"
         class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out"
       >
-        <a href="index.html" class="text-2xl">Inicio</a>
         <a href="index.html#nosotros" class="text-2xl">Sobre Nosotros</a>
 
         <div class="relative text-center flex flex-col items-center">
@@ -199,11 +196,11 @@
             id="submenu"
             class="hidden flex flex-col items-center rounded-md p-4 space-y-2 mt-2"
           >
-            <a href="demoliciones-industriales.html" class="text-xl"
-              >Demoliciones Industriales</a
-            >
             <a href="desmontajes-industriales.html" class="text-xl"
               >Desmontajes Industriales</a
+            >
+            <a href="demoliciones-industriales.html" class="text-xl"
+              >Demoliciones Industriales</a
             >
             <a href="montajes-industriales.html" class="text-xl"
               >Montajes Industriales</a
@@ -216,6 +213,7 @@
             >
           </div>
         </div>
+        <a href="trabajos.html" class="text-2xl">Nuestros Trabajos</a>
         <a href="index.html#contacto" class="text-2xl">Contacto</a>
       </nav>
     </header>
@@ -266,6 +264,52 @@
             </h2>
             <p class="text-base">Desmontaje total de Planta de Producción.</p>
             <p class="text-base">Demolición total Planta de Solventes.</p>
+            <span class="cd-date">2023-2024</span>
+          </div>
+        </div>
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="img/logos_clientes_web/trivinio.jpg" alt="triviño" />
+          </div>
+          <div class="cd-timeline-content scroll-section">
+            <h2 class="text-xl">
+              <a
+                href="https://www.trivino.com.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Triviño Construcciones S.A. (CABA)</a
+              >
+            </h2>
+            <p class="text-base">
+              Desmontaje de las torres de iluminación de Aeroparque
+              Internacional Jorge Newbery.
+            </p>
+            <span class="cd-date">2024</span>
+          </div>
+        </div>
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img
+              src="img/logos_clientes_web/gruponutrioil_logo.jpg"
+              alt="Nutrioil"
+            />
+          </div>
+          <div class="cd-timeline-content scroll-section">
+            <h2 class="text-xl">
+              <a
+                href="https://www.nutrioil.com.bo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Grupo Nutrioil (Alimentos Proteicos SA) (Zárate)</a
+              >
+            </h2>
+            <p class="text-base">
+              Desmontaje y demolición de Planta Ex-SOYEX Zárate. Desmontaje de
+              equipos, tolvas, intercambiadores. Reparación de puente grúa en
+              desuso.
+            </p>
             <span class="cd-date">2024</span>
           </div>
         </div>
@@ -405,11 +449,11 @@
             href="index.html#nosotros"
             class="flex justify-center space-x-3 lg:justify-start"
           >
-            <img src="img/logo.svg" class="w-40" alt="Hierro y Rueda" />
+            <img src="img/isologo.png" class="w-28" alt="Hierro y Rueda" />
           </a>
         </div>
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-sm gap-6 lg:w-3/4"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-sm gap-6 lg:w-3/4 text-left"
         >
           <div class="space-y-3">
             <h3 class="uppercase font-bold text-gray-700">Contacto</h3>
@@ -439,15 +483,16 @@
             <h3 class="uppercase font-bold text-gray-700">Servicios</h3>
             <ul class="space-y-1">
               <li>
-                <a href="demoliciones-industriales.html"
-                  >Demoliciones Industriales</a
-                >
-              </li>
-              <li>
                 <a href="desmontajes-industriales.html"
                   >Desmontajes Industriales</a
                 >
               </li>
+              <li>
+                <a href="demoliciones-industriales.html"
+                  >Demoliciones Industriales</a
+                >
+              </li>
+
               <li>
                 <a href="montajes-industriales.html">Montajes Industriales</a>
               </li>
