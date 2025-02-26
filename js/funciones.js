@@ -8,6 +8,29 @@ jQuery(document).ready(function ($) {
   var barra2 = $("#menu_responsive span.barra").eq(1);
   var barra3 = $("#menu_responsive span.barra").eq(2);
 
+
+$(document).click(function (event) {
+  if (!$(event.target).closest("#serviciosToggle, #submenu").length) {
+    $("#submenu").addClass("hidden");
+  }
+});
+
+  
+  $(document).click(function (event) {
+    if (!$(event.target).closest("#serviciosToggle, #submenu").length) {
+      $("#submenu").addClass("hidden");
+    }
+  });
+  
+  
+  $(document).click(function (event) {
+    if (!$(event.target).closest("#serviciosToggle, #submenu").length) {
+      $("#submenu").addClass("hidden");
+    }
+  });
+  
+  
+
   // Abrir/Cerrar el menú hamburguesa
   $("#mobile-menu-toggle").on("click", function () {
     $(this).toggleClass("is-active");
@@ -136,7 +159,8 @@ jQuery(document).ready(function ($) {
   // ==== // Back to top ====
 
   document.addEventListener("DOMContentLoaded", function () {
-    var currentURL = window.location.pathname;
+
+    const currentURL = window.location.pathname;
     document
       .querySelectorAll(".aside-menu a[data-section]")
       .forEach(function (link) {
@@ -145,4 +169,19 @@ jQuery(document).ready(function ($) {
         }
       });
   });
+
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+  dropdownToggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    dropdown.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!dropdown.contains(e.target) && !dropdownToggle.contains(e.target)) {
+      dropdown.classList.remove("show");
+    }
+  });
+  
 });

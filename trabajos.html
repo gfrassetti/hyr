@@ -121,50 +121,32 @@
     />
   </head>
   <body>
-    <header id="topbar" class="topbar transition-all">
-      <a href="index.html" id="logoSitio" class="logo p-4"
-        ><img src="img/logo.svg" width="150" alt="Hierro y Rueda"
-      /></a>
-      <div id="topbar" class="topbar">
-        <div class="menu-responsive">
-          <a id="correo_menu" href="mailto:info@hierroyrueda.com.ar"
-            ><i class="fa fa-envelope"></i
-          ></a>
-          <div id="menu_responsive" class="abrir">
-            <span class="barra"></span>
-            <span class="barra"></span>
-            <span class="barra"></span>
-          </div>
-        </div>
-        <div class="opacidad-principal">
-          <!-- <span id="cerrar_princial" class="btn-cerrar">&times;</span> -->
-        </div>
-        <nav id="menu_principal" class="menu principal text-black">
-          <li>
-            <a class="item-menu boton" href="demoliciones-industriales.html"
-              >Servicios Industriales</a
-            >
+    <!-- desktop menu -->
+    <header id="topbar" class="topbar transition-all relative">
+      <a href="index.html" id="logoSitio" class="logo p-4">
+        <img src="img/logo.svg" width="150" alt="Hierro y Rueda" />
+      </a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">
+              Servicios Industriales
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="desmontajes-industriales.html">Desmontajes Industriales</a></li>
+              <li><a href="montajes-industriales.html">Montajes Industriales</a></li>
+              <li><a href="rezagos-chatarra.html">Rezagos / Chatarra</a></li>
+              <li><a href="alquiler-equipos.html">Alquiler de Equipos</a></li>
+              <li><a href="demoliciones-industriales.html">Demoliciones Industriales</a></li>
+            </ul>
           </li>
-          <li>
-            <a class="item-menu boton" href="trabajos.html">Trabajos</a>
-          </li>
-          <li>
-            <a class="item-menu boton" href="index.html#nosotros">Nosotros</a>
-          </li>
-          <li><a class="item-menu" href="index.html#contacto">Contacto</a></li>
-          <div class="redes">
-            <li>
-              <a
-                class="item-menu"
-                href="http://wa.me/+5402304420479"
-                target="_blank"
-              >
-                <span>Whatsapp</span></a
-              >
-            </li>
-          </div>
-        </nav>
-      </div>
+          <li><a href="trabajos.html">Trabajos</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      
     </header>
     <!-- mobile menu -->
     <header
@@ -224,9 +206,9 @@
       <img
         loading="lazy"
         class="w-full object-cover"
-        src="img/iStock-1796879087.jpg"
+        src="img/grua_port_1.jpg"
         alt="Demoliciones"
-        style="object-position: 50% 70%; filter: brightness(0.7); height: 500px"
+        style="object-position: 50% 70%; filter: brightness(0.8); height: 500px"
       />
       <div
         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -241,7 +223,7 @@
     </section>
 
     <section
-      class="flex flex-col sm:flex-row w-full mx-auto justify-center"
+      class="flex flex-col sm:flex-row w-full mx-auto justify-center w-"
       style="
         background-image: url('img/iStock-1870160421.jpg');
         background-size: cover;
@@ -256,7 +238,7 @@
             <img src="img/logos_clientes_web/basf_2.png" alt="BASF Logo" />
           </div>
           <div class="cd-timeline-content scroll-section">
-            <h2>
+            <h2 class="text-xl">
               <a
                 href="https://www.basf.com.ar/"
                 target="_blank"
@@ -264,8 +246,8 @@
                 >BASF Argentina S.A. (Tortuguitas)</a
               >
             </h2>
-            <p>Desmontaje total de Planta de Producción.</p>
-            <p>Demolición total Planta de Solventes.</p>
+            <p class="text-base">Desmontaje total de Planta de Producción.</p>
+            <p class="text-base">Demolición total Planta de Solventes.</p>
             <span class="cd-date">2024</span>
           </div>
         </div>
@@ -278,7 +260,7 @@
             />
           </div>
           <div class="cd-timeline-content scroll-section">
-            <h2>
+            <h2 class="text-xl">
               <a
                 href="https://www.volkswagen.com.ar/"
                 target="_blank"
@@ -286,11 +268,11 @@
                 >Volkswagen Argentina S.A. (Pacheco)</a
               >
             </h2>
-            <p>
+            <p class="text-base">
               Desmontaje de mezanino (150 T), ascensores, red de incendio e
               instalación eléctrica.
             </p>
-            <p>Desmontajes varios y retiro de chatarra.</p>
+            <p class="text-base">Desmontajes varios y retiro de chatarra.</p>
             <span class="cd-date">2022</span>
           </div>
         </div>
@@ -303,7 +285,7 @@
             />
           </div>
           <div class="cd-timeline-content scroll-section">
-            <h2>
+            <h2 class="text-xl">
               <a
                 href="https://www.argentina.gob.ar/administracion-general-de-puertos"
                 target="_blank"
@@ -311,11 +293,11 @@
                 >Administración General de Puertos S.E. (CABA)</a
               >
             </h2>
-            <p>
+            <p class="text-base">
               Desarme y retiro de 2 grúas "Ceretti Tanfani" (580 T) en Dársena E
               del Puerto de Buenos Aires.
             </p>
-            <p>Trabajo a 45 mt de altura.</p>
+            <p class="text-base">Trabajo a 45 mt de altura.</p>
             <span class="cd-date">2021</span>
           </div>
         </div>
@@ -328,16 +310,16 @@
             />
           </div>
           <div class="cd-timeline-content scroll-section">
-            <h2>
+            <h2 class="text-xl">
               <a
                 href="https://www.pronacom.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >PRONACOM (Programa Nacional de Compactación)</a
+                >PRO.DE.CO (Programa Nacional de descontaminación y compactación)</a
               >
             </h2>
-            <p>Compactación de más de 2000 vehículos.</p>
-            <p>
+            <p class="text-base">Compactación de más de 2000 vehículos.</p>
+            <p class="text-base">
               Municipios: Mar del Plata, Necochea, Las Flores, Escobar (Aduana).
             </p>
             <span class="cd-date">2021 - Actualidad</span>
@@ -357,7 +339,7 @@
                 >Bayer Argentina (Munro)</a
               >
             </h2>
-            <p>Retiro de chiller industrial (20 T) y de rezagos generales.</p>
+            <p class="text-base">Retiro de chiller industrial (20 T) y de rezagos generales.</p>
             <span class="cd-date">2020</span>
           </div>
         </div>

@@ -53,50 +53,32 @@
     ></script>
   </head>
   <body>
-    <header id="topbar" class="topbar transition-all">
-      <a href="index.html" id="logoSitio" class="logo p-4"
-        ><img src="img/logo.svg" width="150" alt="Hierro y Rueda"
-      /></a>
-      <div id="topbar" class="topbar">
-        <div class="menu-responsive">
-          <a id="correo_menu" href="mailto:info@hierroyrueda.com.ar"
-            ><i class="fa fa-envelope"></i
-          ></a>
-          <div id="menu_responsive" class="abrir">
-            <span class="barra"></span>
-            <span class="barra"></span>
-            <span class="barra"></span>
-          </div>
-        </div>
-        <div class="opacidad-principal">
-          <!-- <span id="cerrar_princial" class="btn-cerrar">&times;</span> -->
-        </div>
-        <nav id="menu_principal" class="menu principal text-black">
-          <li>
-            <a class="item-menu boton" href="demoliciones-industriales.html"
-              >Servicios Industriales</a
-            >
+    <!-- desktop menu -->
+    <header id="topbar" class="topbar transition-all relative">
+      <a href="index.html" id="logoSitio" class="logo p-4">
+        <img src="img/logo.svg" width="150" alt="Hierro y Rueda" />
+      </a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">
+              Servicios Industriales
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="desmontajes-industriales.html">Desmontajes Industriales</a></li>
+              <li><a href="montajes-industriales.html">Montajes Industriales</a></li>
+              <li><a href="rezagos-chatarra.html">Rezagos / Chatarra</a></li>
+              <li><a href="alquiler-equipos.html">Alquiler de Equipos</a></li>
+              <li><a href="demoliciones-industriales.html">Demoliciones Industriales</a></li>
+            </ul>
           </li>
-          <li>
-            <a class="item-menu boton" href="trabajos.html">Trabajos</a>
-          </li>
-          <li>
-            <a class="item-menu boton" href="index.html#nosotros">Nosotros</a>
-          </li>
-          <li><a class="item-menu" href="index.html#contacto">Contacto</a></li>
-          <div class="redes">
-            <li>
-              <a
-                class="item-menu"
-                href="http://wa.me/+5402304420479"
-                target="_blank"
-              >
-                <span>Whatsapp</span></a
-              >
-            </li>
-          </div>
-        </nav>
-      </div>
+          <li><a href="trabajos.html">Trabajos</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      
     </header>
     <!-- mobile menu -->
     <header

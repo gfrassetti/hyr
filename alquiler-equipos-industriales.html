@@ -100,58 +100,32 @@
       </div>
     </header>
     <!-- mobile menu -->
-    <header
-      class="mobile-topbar flex sm:hidden fixed top-0 left-0 w-full bg-black text-white items-center justify-between p-4 z-50"
-    >
-      <div>
-        <img
-          src="img/isologo.png"
-          alt="Logo"
-          class="w-16 object-fit max-h-auto"
-        />
-      </div>
-
-      <button class="hamburger hamburger--slider" id="mobile-menu-toggle">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-
-      <nav
-        id="mobile-nav"
-        class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out"
-      >
-      <a href="index.html" class="text-2xl">Inicio</a>
-      <a href="index.html#nosotros" class="text-2xl">Sobre Nosotros</a>
-
-        <div class="relative text-center flex flex-col items-center">
-          <button id="submenu-toggle" class="text-2xl flex items-center gap-2">
-            Servicios Industriales ▼
-          </button>
-          <div
-            id="submenu"
-            class="hidden flex flex-col items-center rounded-md p-4 space-y-2 mt-2"
-          >
-            <a href="demoliciones-industriales.html" class="text-xl"
-              >Demoliciones Industriales</a
-            >
-            <a href="desmontajes-industriales.html" class="text-xl"
-              >Desmontajes Industriales</a
-            >
-            <a href="montajes-industriales.html" class="text-xl"
-              >Montajes Industriales</a
-            >
-            <a href="rezagos-industriales.html" class="text-xl"
-              >Rezagos / Chatarra</a
-            >
-            <a href="alquiler-equipos-industriales.html" class="text-xl"
-              >Alquiler de Equipos</a
-            >
-          </div>
-        </div>
-        <a href="trabajos.html" class="text-2xl">Nuestros Trabajos</a>
-        <a href="index.html#contacto" class="text-2xl">Contacto</a>
+    <!-- desktop menu -->
+    <header id="topbar" class="topbar transition-all relative">
+      <a href="index.html" id="logoSitio" class="logo p-4">
+        <img src="img/logo.svg" width="150" alt="Hierro y Rueda" />
+      </a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">
+              Servicios Industriales
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="desmontajes-industriales.html">Desmontajes Industriales</a></li>
+              <li><a href="montajes-industriales.html">Montajes Industriales</a></li>
+              <li><a href="rezagos-chatarra.html">Rezagos / Chatarra</a></li>
+              <li><a href="alquiler-equipos.html">Alquiler de Equipos</a></li>
+              <li><a href="demoliciones-industriales.html">Demoliciones Industriales</a></li>
+            </ul>
+          </li>
+          <li><a href="trabajos.html">Trabajos</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
       </nav>
+      
     </header>
     <main>
       <!-- Hero -->
