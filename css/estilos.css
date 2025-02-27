@@ -282,9 +282,6 @@ ul.lista li {
   font-style: italic;
 }
 
-.hamburger-inner{
-  background-color: #000000 !important;
-}
 
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
@@ -792,6 +789,11 @@ header h1 {
 .hamburger-box {
   width: 30px;
   height: 30px;
+}
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner:after, 
+.hamburger.is-active .hamburger-inner:before {
+  background-color: #ffffff !important;
 }
 
 @media screen and (max-width: 640px) {

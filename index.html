@@ -189,8 +189,7 @@
         id="mobile-nav"
         class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-white opacity-0 pointer-events-none transition-opacity duration-500 ease-in-out"
       >
-        <a href="index.html#nosotros" class="text-2xl">Sobre Nosotros</a>
-
+        <a href="#mobile-nav" class="text-2xl">Inicio</a>
         <div class="relative text-center flex flex-col items-center">
           <button id="submenu-toggle" class="text-2xl flex items-center gap-2">
             Servicios Industriales ▼
@@ -217,6 +216,7 @@
           </div>
         </div>
         <a href="trabajos.html" class="text-2xl">Nuestros Trabajos</a>
+        <a href="index.html#nosotros" class="text-2xl">Sobre Nosotros</a>
         <a href="index.html#contacto" class="text-2xl">Contacto</a>
       </nav>
     </header>
@@ -342,10 +342,10 @@
         </div>
       </div>
     </section>
+    <div id="nosotros"></div>
 
     <!-- Nosotros -->
     <section
-      id="nosotros"
       class="flex flex-col sm:flex-row justify-center item-center scroll-section mt-28"
     >
       <div class="block content-center w-full sm:w-1/2 p-8">
@@ -587,7 +587,6 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        effect: "fade",
         fadeEffect: { crossFade: true },
         lazy: true,
         parallax: true,
