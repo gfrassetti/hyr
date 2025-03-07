@@ -168,26 +168,32 @@
       </nav>
     </header>
     <main>
-      <!-- Hero -->
-      <section class="hero-image w-full p-0 h-full relative">
-        <img
-          loading="lazy"
-          class="w-full object-cover h-96"
-          src="img/portadas/rezagos chatarra.jpg"
-          alt="Demoliciones"
-          style="object-position: 50% 70%; filter: brightness(0.7)"
-        />
-        <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        >
-          <h1
-            class="text-5xl font-bold text-center text-white tracking-wider"
-            style="line-height: 1.2"
-          >
-            Rezagos Industriales
-          </h1>
-        </div>
-      </section>
+<!-- Hero -->
+<section class="hero-image w-full p-0 h-full relative">
+
+  <!-- Overlay oscuro semitransparente -->
+  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+  <img
+    loading="lazy"
+    class="w-full h-96 object-cover"
+    src="img/portadas/rezagos chatarra.jpg"
+    alt="Demoliciones"
+    style="object-position: 50% 70%; filter: brightness(0.7);"
+  />
+
+  <div
+    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+  >
+    <h1
+      class="text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg"
+    >
+      Rezagos Industriales
+    </h1>
+  </div>
+
+</section>
+
 
       <!-- Content -->
       <section class="w-full max-w-7xl mx-auto">
