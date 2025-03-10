@@ -173,26 +173,30 @@
       </nav>
     </header>
     <main>
-      <!-- Hero -->
-      <section class="hero-image w-full p-0 h-full relative">
-        <img
-          loading="lazy"
-          class="w-full object-cover"
-          src="img/iStock-1420486589.jpg"
-          alt="Demoliciones"
-          style="object-position: 50% 70%; filter: brightness(0.7)"
-        />
-        <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        >
-          <h1
-            class="text-5xl font-bold text-center text-white tracking-widest"
-            style="line-height: 1.2"
-          >
-            Demoliciones Industriales
-          </h1>
-        </div>
-      </section>
+<!-- Hero -->
+<section class="hero-image w-full p-0 h-full relative">
+  <!-- Overlay oscuro semitransparente -->
+  <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+  <img
+    loading="lazy"
+    class="w-full object-cover"
+    src="img/iStock-1420486589.jpg"
+    alt="Demoliciones"
+    style="object-position: 50% 70%; filter: brightness(0.7);"
+  />
+
+  <div
+    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+  >
+    <h1
+      class="text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg"
+    >
+      Demoliciones Industriales
+    </h1>
+  </div>
+</section>
+
 
       <!-- Content -->
       <section class="w-full max-w-7xl mx-auto">
@@ -327,7 +331,7 @@
       <!-- End Contentt -->
     </main>
     <!-- Footer -->
-    <footer id="contacto" class="px-4 divide-y bg-gray-200 py-8">
+    <footer id="contacto" class="px-4 divide-y bg-gray-200 py-8 scroll-section">
       <div
         class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0"
       >
